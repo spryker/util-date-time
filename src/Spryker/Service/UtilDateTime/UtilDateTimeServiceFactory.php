@@ -28,9 +28,6 @@ class UtilDateTimeServiceFactory extends AbstractServiceFactory
         );
     }
 
-    /**
-     * @return \Spryker\Service\UtilDateTime\Model\TimezoneReaderInterface
-     */
     public function createTimezoneReader(): TimezoneReaderInterface
     {
         return new TimezoneReader(
@@ -39,9 +36,6 @@ class UtilDateTimeServiceFactory extends AbstractServiceFactory
         );
     }
 
-    /**
-     * @return string|null
-     */
     public function getCurrentTimezone(): ?string
     {
         return $this->getProvidedDependency(UtilDateTimeDependencyProvider::SERVICE_TIMEZONE);

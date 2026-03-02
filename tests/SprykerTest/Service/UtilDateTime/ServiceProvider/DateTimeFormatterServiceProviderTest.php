@@ -28,9 +28,6 @@ use Twig\Loader\FilesystemLoader;
  */
 class DateTimeFormatterServiceProviderTest extends Unit
 {
-    /**
-     * @return void
-     */
     public function testRegisterAddsExtensionToTwig(): void
     {
         $applicationMock = $this->getApplicationMock();
@@ -42,9 +39,6 @@ class DateTimeFormatterServiceProviderTest extends Unit
         $this->assertTrue($twig->hasExtension(DateTimeFormatterTwigExtension::class));
     }
 
-    /**
-     * @return \Silex\Application
-     */
     protected function getApplicationMock(): Application
     {
         $application = new Application();

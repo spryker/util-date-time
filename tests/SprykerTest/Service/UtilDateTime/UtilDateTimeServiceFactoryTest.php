@@ -27,17 +27,11 @@ class UtilDateTimeServiceFactoryTest extends Unit
      */
     protected UtilDateTimeServiceTester $tester;
 
-    /**
-     * @return void
-     */
     protected function _before(): void
     {
         $this->tester->setTimezoneService();
     }
 
-    /**
-     * @return void
-     */
     public function testCreateDateFormatterShouldReturnDateFormatter(): void
     {
         $utilDateTimeServiceFactory = new UtilDateTimeServiceFactory();

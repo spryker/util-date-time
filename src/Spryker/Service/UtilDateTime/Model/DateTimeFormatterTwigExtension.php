@@ -35,9 +35,6 @@ class DateTimeFormatterTwigExtension extends TwigExtension
      */
     protected $utilDateTimeService;
 
-    /**
-     * @param \Spryker\Service\UtilDateTime\UtilDateTimeServiceInterface $utilDateTimeService
-     */
     public function __construct(UtilDateTimeServiceInterface $utilDateTimeService)
     {
         $this->utilDateTimeService = $utilDateTimeService;

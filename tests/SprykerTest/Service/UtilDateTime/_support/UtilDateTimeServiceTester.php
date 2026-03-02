@@ -37,11 +37,6 @@ class UtilDateTimeServiceTester extends Actor
      */
     protected const SERVICE_TIMEZONE = 'SERVICE_TIMEZONE';
 
-    /**
-     * @param string|null $timezone
-     *
-     * @return void
-     */
     public function setTimezoneService(?string $timezone = null): void
     {
         $this->getContainer()

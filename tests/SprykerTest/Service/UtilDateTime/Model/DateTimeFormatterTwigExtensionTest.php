@@ -29,9 +29,6 @@ class DateTimeFormatterTwigExtensionTest extends Unit
      */
     public const DATE_TO_FORMAT = '1980-12-06 08:00:00';
 
-    /**
-     * @return void
-     */
     public function testInstantiationShouldReturnExtension(): void
     {
         $utilDateTimeServiceMock = $this->getUtilDateTimeServiceMock();
@@ -40,9 +37,6 @@ class DateTimeFormatterTwigExtensionTest extends Unit
         $this->assertInstanceOf(DateTimeFormatterTwigExtension::class, $dateTimeFormatterTwigExtension);
     }
 
-    /**
-     * @return void
-     */
     public function testGetNameReturnsNameOfExtension(): void
     {
         $utilDateTimeServiceMock = $this->getUtilDateTimeServiceMock();
@@ -51,9 +45,6 @@ class DateTimeFormatterTwigExtensionTest extends Unit
         $this->assertSame(DateTimeFormatterTwigExtension::EXTENSION_NAME, $dateTimeFormatterTwigExtension->getName());
     }
 
-    /**
-     * @return void
-     */
     public function testGetFiltersShouldReturnArray(): void
     {
         $utilDateTimeServiceMock = $this->getUtilDateTimeServiceMock();
@@ -62,9 +53,6 @@ class DateTimeFormatterTwigExtensionTest extends Unit
         $this->assertContainsOnly(TwigFilter::class, $dateTimeFormatterTwigExtension->getFilters());
     }
 
-    /**
-     * @return void
-     */
     public function testGetFunctionsShouldReturnArray(): void
     {
         $utilDateTimeServiceMock = $this->getUtilDateTimeServiceMock();
@@ -73,9 +61,6 @@ class DateTimeFormatterTwigExtensionTest extends Unit
         $this->assertIsArray($dateTimeFormatterTwigExtension->getFunctions());
     }
 
-    /**
-     * @return void
-     */
     public function testFormatDateDelegatesToDateTimeFormatter(): void
     {
         $utilDateTimeServiceMock = $this->getUtilDateTimeServiceMock();
@@ -85,9 +70,6 @@ class DateTimeFormatterTwigExtensionTest extends Unit
         $dateTimeFormatterTwigExtension->formatDate(static::DATE_TO_FORMAT);
     }
 
-    /**
-     * @return void
-     */
     public function testFormatDateTimeDelegatesToDateTimeFormatter(): void
     {
         $utilDateTimeServiceMock = $this->getUtilDateTimeServiceMock();
@@ -97,9 +79,6 @@ class DateTimeFormatterTwigExtensionTest extends Unit
         $dateTimeFormatterTwigExtension->formatDateTime(static::DATE_TO_FORMAT);
     }
 
-    /**
-     * @return void
-     */
     public function testFormatTimeDelegatesToDateTimeFormatter(): void
     {
         $utilDateTimeServiceMock = $this->getUtilDateTimeServiceMock();

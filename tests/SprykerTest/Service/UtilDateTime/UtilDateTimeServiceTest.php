@@ -37,9 +37,6 @@ class UtilDateTimeServiceTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     protected function _before(): void
     {
         $this->tester->setTimezoneService();
@@ -64,9 +61,6 @@ class UtilDateTimeServiceTest extends Unit
         $this->assertSame($expectedFormattedDate, $utilDateTimeService->formatDate($date));
     }
 
-    /**
-     * @return array
-     */
     public function dateFormatDataProvider(): array
     {
         return [
@@ -96,9 +90,6 @@ class UtilDateTimeServiceTest extends Unit
         $this->assertSame($expectedFormattedDateTime, $utilDateTimeService->formatDateTime($date));
     }
 
-    /**
-     * @return array
-     */
     public function dateTimeFormatDataProvider(): array
     {
         return [
@@ -130,9 +121,6 @@ class UtilDateTimeServiceTest extends Unit
         $this->assertSame($expectedFormattedDate, $utilDateTimeService->formatDate($date));
     }
 
-    /**
-     * @return array
-     */
     public function dateFormatWithTimeZoneDataProvider(): array
     {
         return [
@@ -162,9 +150,6 @@ class UtilDateTimeServiceTest extends Unit
         $this->assertSame($expectedFormattedTime, $utilDateTimeService->formatTime($date));
     }
 
-    /**
-     * @return array
-     */
     public function timeFormatDataProvider(): array
     {
         return [
@@ -251,11 +236,6 @@ class UtilDateTimeServiceTest extends Unit
         ];
     }
 
-    /**
-     * @param array $config
-     *
-     * @return \Spryker\Service\UtilDateTime\UtilDateTimeServiceInterface
-     */
     protected function getService(array $config): UtilDateTimeServiceInterface
     {
         $this->prepareConfig($config);
@@ -264,11 +244,6 @@ class UtilDateTimeServiceTest extends Unit
         return $utilDateTimeService;
     }
 
-    /**
-     * @param array $config
-     *
-     * @return void
-     */
     protected function prepareConfig(array $config): void
     {
         foreach ($config as $key => $value) {

@@ -22,9 +22,6 @@ use Spryker\Service\UtilDateTime\UtilDateTimeDependencyProvider;
  */
 class UtilDateTimeDependencyProviderTest extends Unit
 {
-    /**
-     * @return void
-     */
     public function testProvideServiceDependenciesShouldAddConfigToContainer(): void
     {
         $container = new Container();

@@ -23,19 +23,12 @@ class TimezoneReader implements TimezoneReaderInterface
      */
     protected ?string $storeTimezone;
 
-    /**
-     * @param \Spryker\Service\UtilDateTime\UtilDateTimeConfig $config
-     * @param string|null $storeTimezone
-     */
     public function __construct(UtilDateTimeConfig $config, ?string $storeTimezone)
     {
         $this->config = $config;
         $this->storeTimezone = $storeTimezone;
     }
 
-    /**
-     * @return string
-     */
     public function getTimeZone(): string
     {
         return $this->storeTimezone

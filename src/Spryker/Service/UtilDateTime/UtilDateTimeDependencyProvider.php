@@ -53,11 +53,6 @@ class UtilDateTimeDependencyProvider extends AbstractBundleDependencyProvider
         return $container;
     }
 
-    /**
-     * @param \Spryker\Service\Kernel\Container $container
-     *
-     * @return \Spryker\Service\Kernel\Container
-     */
     protected function addTimezoneFromApplicationContainer(Container $container): Container
     {
         $container->set(static::SERVICE_TIMEZONE, function (Container $container) {

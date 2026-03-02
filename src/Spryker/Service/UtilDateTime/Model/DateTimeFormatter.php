@@ -49,10 +49,6 @@ class DateTimeFormatter implements DateTimeFormatterInterface
      */
     protected TimezoneReaderInterface $timezoneReader;
 
-    /**
-     * @param \Spryker\Shared\Config\Config $config
-     * @param \Spryker\Service\UtilDateTime\Model\TimezoneReaderInterface $timezoneReader
-     */
     public function __construct(Config $config, TimezoneReaderInterface $timezoneReader)
     {
         $this->config = $config;

@@ -11,8 +11,5 @@ namespace Spryker\Service\UtilDateTime\Model;
 
 interface TimezoneReaderInterface
 {
-    /**
-     * @return string
-     */
     public function getTimeZone(): string;
 }
