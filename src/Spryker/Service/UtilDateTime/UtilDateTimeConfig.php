@@ -15,6 +15,8 @@ use Spryker\Shared\UtilDateTime\UtilDateTimeConstants;
 class UtilDateTimeConfig extends AbstractBundleConfig
 {
     /**
+     * @api
+     *
      * @var string
      */
     public const DEFAULT_TIME_ZONE = 'Europe/Berlin';
